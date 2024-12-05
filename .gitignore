@@ -1,0 +1,55 @@
+# React (frontend) specific ignores
+frontend/node_modules/
+frontend/build/
+frontend/dist/
+frontend/.env
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/coverage/
+
+# Flask (backend) specific ignores
+backend/__pycache__/
+backend/*.py[cod]
+backend/*.pyo
+backend/*.pyd
+backend.Python
+backend/pip-log.txt
+backend/venv/
+backend/env/
+backend/ENV/
+backend/instance/
+backend/migrations/
+backend/*.egg-info/
+backend/*.eggs/
+backend/*.sqlite3
+
+# Log files
+*.log
+*.out
+*.pid
+*.seed
+*.gz
+.pnpm-debug.log*
+
+# IDE-specific files
+.idea/
+.vscode/
+*.swp
+*~
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Docker
+docker-compose.override.yml
+*.log
+
+# Build system files
+*.lock
+*.bak

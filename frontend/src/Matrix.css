@@ -1,0 +1,69 @@
+/* src/Matrix.css */
+.matrix-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr)); /* Minimum size of 60px for each box */
+    gap: 1px;
+    background-color: #e0e0e0; /* Light gray background for the grid */
+    padding: 10px;
+  }
+  
+  .matrix-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* Add padding to make the box expand with content */
+    border-radius: 8px; /* Rounded corners */
+    border: 1px solid #ccc; /* Light border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    cursor: pointer; /* Show a pointer cursor on hover */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for hover effect */
+    font-size: 16px; /* Adjust font size if needed */
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    box-sizing: border-box; /* Include padding and border in total width/height */
+  }
+  
+  .matrix-box:hover {
+    transform: scale(1.1); /* Slightly enlarge the box on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+  }
+  
+  .matrix-box.rock {
+    background-color: #f44336; /* Red for Rock */
+  }
+  
+  .matrix-box.mine {
+    background-color: #2196f3; /* Blue for Mine */
+  }
+  
+  .matrix-box.unknown {
+    background-color: #9e9e9e; /* Gray for Unknown */
+  }
+  
+  .matrix-box.hidden {
+    background-color: #f5f5f5; /* Light gray for hidden state */
+    color: #000; /* Black text for hidden state */
+  }
+  
+  .face {
+    font-size: 24px; /* Larger font size for faces */
+    transition: opacity 0.3s ease; /* Smooth fade transition */
+  }
+  
+  .face.hidden {
+    opacity: 0; /* Hide faces initially */
+  }
+  
+  .face.visible {
+    opacity: 1; /* Show faces when revealed */
+  }
+  
+  .face.happy {
+    color: #ffeb3b; /* Yellow for happy face */
+  }
+  
+  .face.sad {
+    color: #f44336; /* Red for sad face */
+  }
+  
